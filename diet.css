@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://t3.ftcdn.net/jpg/03/86/34/64/360_F_386346461_ycljRSlIn3X54bITkN6YD8jlL8gjtinh.jpg') center/cover no-repeat fixed;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.logout {
+    margin-right: 150px;
+    margin-top: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.diet-container {
+    text-align: center;
+    background-color: darkgray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#diet-result {
+    margin-top: 20px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diet.css">
+    <title>BMI-Based Diet</title>
+</head>
+<body>
+    <div class="logout">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="diet-container">
+        <h2>BMI-Based Diet</h2>
+        
+        <form id="diet-form">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <label for="calories">Daily Calories Goal:</label>
+            <input type="number" id="calories" placeholder="Enter your daily calorie goal" required readonly>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+            <button type="button" onclick="generateDietPlan()" id="generateBtn" disabled>Generate Diet Plan</button>
+        </form>
+
+        <div id="diet-result" style="display: none;">
+            <h3>Sample Diet Plan:</h3>
+            <ul id="diet-list"></ul>
+        </div>
+    </div>
+
+    <script src="diet.js"></script>
+</body>
+</html>

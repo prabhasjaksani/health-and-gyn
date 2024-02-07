@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="excercisepage.css">
+    <title>Weight Categories</title>
+</head>
+<body>
+    <div class="logout">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="container">
+        <div class="box" id="less-weight-box">
+            <h2>Under Weight</h2>
+            <p>Discover exercises suitable for under weight individuals.</p>
+            <button onclick="openLessWeightPage()">Go to Under Weight Exercises</button>
+        </div>
+
+        <div class="box" id="medium-weight-box">
+            <h2>Moderate Weight</h2>
+            <p>Explore exercises suitable for individuals with moderate weight.</p>
+            <button onclick="openMediumWeightPage()">Go to Moderate Weight Exercises</button>
+        </div>
+
+        <div class="box" id="high-weight-box">
+            <h2>Over Weight</h2>
+            <p>Find exercises suitable for individuals with over weight.</p>
+            <button onclick="openHighWeightPage()">Go to Over Weight Exercises</button>
+        </div>
+    </div>
+
+    <script src="excercisepage.js"></script>
+</body>
+</html>

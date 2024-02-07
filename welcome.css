@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden; /* Ensure the overflow is hidden to prevent scrollbars */
+    background: url('welcome.jpeg') center/cover no-repeat fixed;
+    animation: slideBackground 15s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes slideBackground {
+    0%, 100% {
+        background: url('welcome1.jpeg') center/cover no-repeat fixed;
+    }
+    33.33% {
+        background: url('welcome.jpeg') center/cover no-repeat fixed;
+    }
+    66.66% {
+        background: url('welcome3.jpeg') center/cover no-repeat fixed;
+    }
+}
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+h2
+{
+    font-size: 40px;
+}
